@@ -15,7 +15,7 @@
 </ul>
 
 <div class="tab-content mt-4">
-    <div *ngFor="let tab of tabArr">
+    <ng-container *ngFor="let tab of tabArr">
         <div *ngIf="tab.tabTitle.toLowerCase().includes(selectedFrameWork)" class="card">
             <!-- <div class="card-body">
                 {{tab.tabContent}}
@@ -24,6 +24,6 @@
     
             </div>
         </div>
-    </div>
+    </ng-container>
 </div>
 

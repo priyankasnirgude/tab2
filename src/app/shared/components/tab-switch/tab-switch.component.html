@@ -1,0 +1,39 @@
+<!-- <p class="alert alert-info" *ngIf="val === 5">The value is 5</p>
+<p class="alert alert-info" *ngIf="val === 10">The value is 10</p>
+<p class="alert alert-info" *ngIf="val === 15">The value is 15</p>
+
+ -->
+
+<!-- <div [ngSwitch]="val">
+    <p class="alert alert-info" *ngSwitchCase="5">The value is 5</p>
+    <p class="alert alert-info" *ngSwitchCase="10">The value is 10</p>
+    <p class="alert alert-info" *ngSwitchCase="15">The value is 15</p>
+    <p class="alert alert-info" *ngSwitchDefault>The value is any thing</p>
+</div> -->
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a href="javascript:;" class="nav-link"
+        [ngClass]="{
+            active : price === '5'
+        }">
+            Set price to 5
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" class="nav-link"
+        [ngClass]="{
+            active : price === '10'
+        }">
+            Set price to 10
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" class="nav-link"
+        [ngClass]="{
+            active : price === '15'
+        }">
+            Set price to 15
+        </a>
+    </li>
+</ul>
