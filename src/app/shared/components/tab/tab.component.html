@@ -1,0 +1,53 @@
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a href="javascript:;" 
+        data-framework= 'Angular'
+        (click)="selectedFramWork = 'Angular'"
+        [ngClass]="{
+            active : selectedFramWork === 'Angular'
+        }"
+        class="nav-link">Angular</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" 
+        data-framework= 'React'
+        (click)="selectedFramWork = 'React'"
+        [ngClass]="{
+            active : selectedFramWork === 'React'
+        }"
+        class="nav-link">React</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;"
+        data-framework= 'Vue'
+        (click)="selectedFramWork = 'Vue'"
+        [ngClass]="{
+            active : selectedFramWork === 'Vue'
+        }"
+        class="nav-link">Vue</a>
+    </li>
+</ul>
+
+<div class="tab-content mt-4">
+    <div class="card" *ngIf="selectedFramWork === 'Angular'">
+        <div class="card-body">
+            <strong>Angular</strong>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Quod quia inventore saepe impedit, dignissimos veritatis.
+        </div>
+    </div>
+    <div class="card" *ngIf="selectedFramWork === 'React'">
+        <div class="card-body">
+            <strong>React</strong>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Quod quia inventore saepe impedit, dignissimos veritatis.
+        </div>
+    </div>
+    <div class="card" *ngIf="selectedFramWork === 'Vue'">
+        <div class="card-body">
+            <strong>Vue</strong>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Quod quia inventore saepe impedit, dignissimos veritatis.
+        </div>
+    </div>
+</div>
