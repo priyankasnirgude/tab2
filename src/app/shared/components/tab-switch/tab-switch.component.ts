@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabSwitchComponent implements OnInit {
 
-  price : string = '10';
+  price : string = '5';
+  selectedFrameWork : string = "angular";
   constructor() { }
 
   ngOnInit(): void {
